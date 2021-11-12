@@ -4,26 +4,40 @@
     box-sizing: border-box;
 }
 
+body{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Headers */
 header{
     width:100%;
 }
 
-#main-header{
+header#main-header{
     height: 100px;
     background-color: pink;
-    display: block;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
-#little-blueheader{
-    height: 150px;
-    background-color: darkblue;
-}
-
-
-#secondary-header{
+header#secondary-header{
     height: 300px;
     background-color: burlywood;
-    display: block;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+header#little-blueheader{
+    height: 150px;
+    background-color: lightblue;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Web-site contents */
+
+#main-contents{
+    background-color: blue;
 }
 
 .clearfix::after{
@@ -35,18 +49,22 @@ header{
 main{
     height: 600px;
     background-color: lightblue;
-    width: 50%;
+    width: calc(50% - 20px);
+    margin: 10px;
     float: left;
 }
 
 .aside{
     width: 25%;
+    margin-top: 10px;
     height: 600px;
     background-color: lightblue;
     float: left;
 }
 
 footer{
-    height: 150px;
-    background-color: violet;
+    height: 80px;
+    background-color: purple;
+    margin: 20px 0;
+    border-radius: 10px;
 }
